@@ -6,6 +6,12 @@ Android のホームアプリ（ランチャー）です。アイコンを並べ
 **このリポジトリは配布専用です。ソースコードは含まれていません。**
 APK の置き場所として使っています。
 
+| ホーム | タブと入力窓 | ALL APPS |
+|---|---|---|
+| ![ホーム画面](docs/screenshot-home.png) | ![タブと入力窓](docs/screenshot-tabs.png) | ![ALL APPS](docs/screenshot-allapps.png) |
+
+配色は 11 種から選べます。上の 3 枚はそれぞれ別のテーマと背景です。
+
 ## インストール
 
 ### 手動で入れる
@@ -147,7 +153,7 @@ adb shell pm grant com.almco1.nierlauncher android.permission.WRITE_SECURE_SETTI
 | | 内容 |
 |---|---|
 | `BASE SCHEME` | 配色（Default Dark, Tokyo Night, Dracula, Nord, Monokai, Solarized Dark, One Dark, Ayu Dark, GitHub Dark, セピアペーパー, ウォームクリーム の全 11 種） |
-| `ACCENT COLOR` | アクセント色を自分で指定。指定するとテーマの色より優先されます |
+| `ACCENT COLOR` | アクセント色を自分で指定。指定するとテーマの色より優先されます。`システムを無彩色にする` を入れると時計やダイアログが白系になり、罫線の色が引き立ちます |
 | `ICON COLOR` | アイコンをテーマ色の単色にする（バイカラー）か、元の色のまま出す（フルカラー）か |
 | `VISUAL SURFACE` | 背景（NONE / SPLASH / MESH / CURVE / SLICE / FLAME の同梱 5 種、または `GALLERY` から自分の画像）。自分の画像は位置と拡大率を調整できます |
 | `SYSTEM WALLPAPER` | いまの背景を端末の壁紙にも焼き込む。ロック画面そのものは差し替えられませんが、背景が揃うと時計の色まで寄ります |
